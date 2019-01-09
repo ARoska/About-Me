@@ -43,7 +43,7 @@ answers[4] = answers[4].toUpperCase();
 console.log('Sister answer:', answers[4]);
 
 if (answers[4] === 'N' || answers[4] === 'NO') {
-    alert('Correct!  Although I have to admit it was kind of a trick question...  I actually do have a answers[4], but she is 5 years younger than me :\)');
+    alert('Correct!  Although I have to admit it was kind of a trick question...  I actually do have a sister, but she is 5 years younger than me :\)');
 } else {
     alert('HAH!  Fooled ya!  I\'m actually the older sibling!');
 }
