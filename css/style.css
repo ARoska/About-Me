@@ -21,11 +21,46 @@ h2 {
     margin: 15px 0px 10px 0px;
     
 }
-p {
+
+h3 {
     color: black;
     font-size: 18pt;
+    text-indent: 10px;
+    font: "Trajan";
+    font-style: oblique;
+    font-weight: bold;
+    margin: 10px 0px;
+
+}
+
+h3.games {
+    color: black;
+    font-size: 18pt;
+    text-indent: 10px;
+    font: "Trajan";
+    font-style: oblique;
+    font-weight: bold;
+    margin: 15px 25px;
+
+}
+
+p {
+    color: black;
+    font-size: 16pt;
     text-indent: 15px;
     font-style: "Helvetica";
+}
+
+ul {
+    list-style: square outside none;
+    margin: 10px 25px;
+
+}
+
+ol {
+    list-style: upper-roman outside none;
+    margin: 10px 50px;
+
 }
 
 img {
