@@ -1,0 +1,23 @@
+header {
+    background: #150541;
+    color: white;
+    padding: 30px;
+    font-size: 24pt;
+
+}
+
+body {
+    background: #FF0000;
+
+}
+
+p {
+    color: white;
+    font-size: 18pt;
+    text-indent: 15px;
+}
+
+img {
+    padding: 35px;
+
+}
