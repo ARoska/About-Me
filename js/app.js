@@ -1,64 +1,61 @@
 alert('Hi there!  Let\'s see how well you know me.  I\'m going to ask you a few Yes or No questions, please answer with a Y or N.  Thanks!');
 
-var userName = prompt('First, please tell me your name');
-console.log('User name:', userName);
+var answers = [];
 
-var lastName = prompt('Hi ' + userName + '!  Nice to meet ya!  We\'ll start with an easy one: Is my last name ROSKA?');
-console.log('Last name answer:', lastName);
+answers[0] = prompt('First, please tell me your name');
+console.log('User name:', answers[0]);
 
-var lastNameAnswer = lastName.toUpperCase();
+answers[1] = prompt('Hi ' + answers[0] + '!  Nice to meet ya!  We\'ll start with an easy one: Is my last name ROSKA?');
+answers[1] = answers[1].toUpperCase();
+console.log('Last name answer:', answers[1]);
 
-if (lastNameAnswer === 'Y' || lastNameAnswer === 'YES') {
+if (answers[1] === 'Y' || answers[1] === 'YES') {
     alert('Yup! Told you that was going to be easy.');
 } else {
-    alert('Really ' + userName + '? You don\'t even know my last name?');
+    alert('Really ' + answers[0] + '? You don\'t even know my last name?');
 } 
 
-var homeTown = prompt('Ok ' + userName + ', this one is a tad tougher.  Do I live in Everett?');
-console.log('Home town answer:', homeTown);
+answers[2] = prompt('Ok ' + answers[0] + ', this one is a tad tougher.  Do I live in Everett?');
+answers[2] = answers[2].toUpperCase();
+console.log('Home town answer:', answers[2]);
 
-var homeTownAnswer = homeTown.toUpperCase();
-
-if (homeTownAnswer === 'N' || homeTownAnswer === 'NO') {
+if (answers[2] === 'N' || answers[2] === 'NO') {
     alert('Correct!  I actually live in Monroe, about 20 minutes east of Everett.');
 } else {
     alert('Sorry, that\'s not quite right.  I actually live in Monroe, a town about 20 minutes east of Everett.');
 }
 
-var hobby = prompt('One last easy one for ya ' + userName + ': Am I a gamer?');
-console.log('Hobby answer:', hobby);
+answers[3] = prompt('One last easy one for ya ' + answers[0] + ': Am I a gamer?');
+answers[3] = answers[3].toUpperCase();
+console.log('Gamer answer:', answers[3]);
 
-var hobbyAnswer = hobby.toUpperCase();
-
-if (hobbyAnswer === 'Y' || hobbyAnswer === 'YES') {
-    alert('You know it ' + userName + '! I have been a gamer all my life!');
+if (answers[3] === 'Y' || answers[3] === 'YES') {
+    alert('You know it ' + answers[0] + '! I have been a gamer all my life!');
 }
 else {
-    alert('Nah, ' + userName + ', I love video games lol.  Better luck next time!');
+    alert('Nah, ' + answers[0] + ', I love video games lol.  Better luck next time!');
 }
 
-alert('Alright ' + userName + ', you ready?  These next couple are a bit tougher!');
+alert('Alright ' + answers[0] + ', you ready?  These next couple are a bit tougher!');
 
-var sister = prompt('So, do you think I have an older sister?');
-console.log('Sister answer:', sister);
+answers[4] = prompt('So, do you think I have an older sister?');
+answers[4] = answers[4].toUpperCase();
+console.log('Sister answer:', answers[4]);
 
-var sisterAnswer = sister.toUpperCase();
-
-if (sisterAnswer === 'N' || sisterAnswer === 'NO') {
-    alert('Correct!  Although I have to admit it was kind of a trick question...  I actually do have a sister, but she is 5 years younger than me :\)');
+if (answers[4] === 'N' || answers[4] === 'NO') {
+    alert('Correct!  Although I have to admit it was kind of a trick question...  I actually do have a answers[4], but she is 5 years younger than me :\)');
 } else {
     alert('HAH!  Fooled ya!  I\'m actually the older sibling!');
 }
 
-var blackBelt = prompt('Last one ' + userName + '!  Do you think I have a Black Belt in a martial art?');
-console.log('Black belt answer:', blackBelt);
+answers[5] = prompt('Last one ' + answers[0] + '!  Do you think I have a Black Belt in a martial art?');
+answers[5] = answers[5].toUpperCase();
+console.log('Black belt answer:', answers[5]);
 
-var blackBeltAnswer = blackBelt.toUpperCase();
-
-if (blackBeltAnswer === 'Y' || blackBeltAnswer === 'YES') {
-    alert('DING DING DING!  Nice job ' + userName + ', how did you know?  I have a 4th degree Black Belt in Tae Kwon Do!')
+if (answers[5] === 'Y' || answers[5] === 'YES') {
+    alert('DING DING DING!  Nice job ' + answers[0] + ', how did you know?  I have a 4th degree Black Belt in Tae Kwon Do!')
 } else {
-    alert('Sorry ' + userName + ', but I actually DO have a Black Belt!  It\'s a 4th degree Black Belt it Tae Kwon Do.');
+    alert('Sorry ' + answers[0] + ', but I actually DO have a Black Belt!  It\'s a 4th degree Black Belt it Tae Kwon Do.');
 }
 
 alert('Thanks for playing my little guessing game!');
