@@ -1,4 +1,4 @@
-'strict';
+'use strict';
 
 alert('Hi there!  My name is Andy Roska, and I am a student at Code Fellosw!  Let\'s see how well you know me.  I\'m going to ask you a few questions.  The first five will be Yes/No so please answer with a Y or N.  Thanks!');
 
