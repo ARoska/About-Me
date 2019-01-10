@@ -86,9 +86,16 @@ while (questionChances[0] > 0) {
         questionChances[0] = null;
         alert('Sorry ' + userName + ' you\'re all out of chances...');
 
+    } else if (questionChances !== 0 && answers[6] < 2004) {
+        questionChances[0]--;
+        alert('Nope, I attended my first con AFTER that.  Try again!');
+
+    } else if (questionChances !== 0 && answers[6] > 2004) {
+        questionChances[0]--;
+        alert('Nope, I attended my first con BEFORE that.  Try again!');
     } else {
         questionChances[0]--;
-        alert('Nope, try again!');
+        alert('Sorry, but I am looking for a year.  Please try again, and make sure you enter a NUMBER.');
     }
 }
 
