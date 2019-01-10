@@ -1,5 +1,5 @@
 header {
-    background: #B2A600;
+    background: #22B2A0;
     color: black;
     padding: 30px;
     font-size: 24pt;
@@ -7,7 +7,7 @@ header {
 }
 
 body {
-    background: #4E04F7;
+    background: #FFDDCE;
 
 }
 
@@ -49,6 +49,8 @@ p {
     font-size: 16pt;
     text-indent: 15px;
     font-style: "Helvetica";
+    margin: 0px 10px;
+
 }
 
 ul {
@@ -59,7 +61,7 @@ ul {
 
 ol {
     list-style: upper-roman outside none;
-    margin: 10px 50px;
+    margin: 10px 40px;
 
 }
 
