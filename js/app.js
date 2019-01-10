@@ -7,11 +7,11 @@ var correctAnswers = 0;
 var questionChances = [4, 6]
 
 userName = prompt('First, please tell me your name');
-console.log('User name:', userName);
+console.log('User Name:', userName);
 
 answers[1] = prompt('Hi ' + userName + '!  Nice to meet ya!  We\'ll start with an easy one: Is my last name ROSKA?');
 answers[1] = answers[1].toUpperCase();
-console.log('Last name answer:', answers[1]);
+console.log('Last Name answer:', answers[1]);
 
 if (answers[1] === 'Y' || answers[1] === 'YES') {
     alert('Yup! Told you that was going to be easy.');
@@ -23,7 +23,7 @@ if (answers[1] === 'Y' || answers[1] === 'YES') {
 
 answers[2] = prompt('Ok ' + userName + ', this one is a tad tougher.  Do I live in Everett?');
 answers[2] = answers[2].toUpperCase();
-console.log('Home town answer:', answers[2]);
+console.log('Home Town answer:', answers[2]);
 
 if (answers[2] === 'N' || answers[2] === 'NO') {
     alert('Correct!  I actually live in Monroe, about 20 minutes east of Everett.');
@@ -61,7 +61,7 @@ if (answers[4] === 'N' || answers[4] === 'NO') {
 
 answers[5] = prompt('Last one ' + userName + '!  Do you think I have a Black Belt in a martial art?');
 answers[5] = answers[5].toUpperCase();
-console.log('Black belt answer:', answers[5]);
+console.log('Black Belt answer:', answers[5]);
 
 if (answers[5] === 'Y' || answers[5] === 'YES') {
     alert('DING DING DING!  Nice job ' + userName + ', how did you know?  I have a 4th degree Black Belt in Tae Kwon Do!')
@@ -75,7 +75,7 @@ alert('OK ' + userName + ', these next couple are multiple choice.  You will hav
 
 while (questionChances[0] > 0) {
     answers[6] = prompt('Ever year I go to the largest Anime (Japanese Animation) convention in the Pacific Northwest, Sakura Con.  I haven\'t missed a year since I started going.  What year did I attend my first Sakura Con?  YOU HAVE ' + questionChances[0] + ' CHANCES LEFT.');
-    console.log('Sakura Con year answer:', answers[6]);
+    console.log('Sakura Con Year answer:', answers[6]);
 
     if (answers[6] === '2004') {
         questionChances[0] = null;
@@ -99,7 +99,7 @@ if (questionChances[0] === null) {
 while (questionChances[1] > 0) {
     answers[7] = prompt('Right then, ' + userName + ', onward!  As you should know from earlier, I am an avid gamer.  I have been gaming since I was 5 years old.  Can you guess one(1) game console that I have NOT owned in my life?  YOU HAVE ' + questionChances[1] + ' CHANCES LEFT.');
     answers[7] = answers[7].toUpperCase();
-    console.log('Game console answer:', answers[7]);
+    console.log('Game Console answer:', answers[7]);
 
     if (answers[7] === 'NES' || answers[7] === 'ORIGINAL NINTENDO' || answers[7] === 'NINTENDO ENTERTAINMENT SYSTEM' || answers[7] === 'NINTENDO' || answers[7] === 'SEGA CD' || answers[7] === 'SEGA SATURN' || answers[7] === 'SATURN' || answers[7] === 'SEGA DREAMCAST' || answers[7] === 'DREAMCAST' || answers[7] === 'ORIGINAL XBOX' || answers[7] === 'XBOX' || answers[7] === 'MICROSOFT XBOX') {
         questionChances[1] = null;
@@ -128,6 +128,7 @@ if (correctAnswers === 7) {
 
 } else if (correctAnswers !== 0) {
     alert('Thanks for playing ' + userName + '.  You got ' + correctAnswers + ' questions correct.  Better luck next time!');
+
 } else {
     alert('You got 0 answers correct...  Well, at least you tried...');
 }
