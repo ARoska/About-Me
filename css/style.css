@@ -40,7 +40,7 @@ h3 {
     font: 'Trajan';
     font-style: oblique;
     font-weight: bold;
-    margin: 15px 25px;
+    margin: 15px 400px 25px 450px;
 
 }
 
@@ -61,11 +61,27 @@ ul {
 
 ol {
     list-style: upper-roman outside none;
-    margin: 10px 40px;
+    margin: 10px 400px 10px 400px;
+    float: left;
 
 }
 
-img {
+#me {
     margin: 10px 15px 10px;
+    float: right
+
+}
+
+#ctrigger {
+    height: 7%;
+    width: 7%;
+    float: left;
+
+}
+
+#metroid {
+    height: 10%;
+    width: 10%;
+    float: left;
 
 }
