@@ -1,18 +1,14 @@
 'use strict';
 
-alert('Hi there!  My name is Andy Roska, and I am a student at Code Fellows!  Let\'s see how well you know me.  I\'m going to ask you a few questions.  The first five will be Yes/No so please answer with a Y or N.  Thanks!');
-
 var answers = [];
 var correctAnswers = 0;
-var questionChances = [4, 6]
-
-var userName = prompt('Before we begin, please tell me your name.');
-console.log('User Name:', userName);
+var questionChances = [4, 6];
+var userName;
 
 function questionOne(){
     answers[0] = prompt('Hi ' + userName + '!  Nice to meet ya!  We\'ll start with an easy one: Is my last name ROSKA?');
     answers[0] = answers[0].toUpperCase();
-    console.log('Last Name answer:', answers[1]);
+    console.log('Last Name answer:', answers[0]);
 
     if (answers[0] === 'Y' || answers[0] === 'YES') {
         alert('Yup! Told you that was going to be easy.');
@@ -157,10 +153,17 @@ function finalCorrect(){
     }
 }
 
+alert('Hi there!  My name is Andy Roska, and I am a student at Code Fellows!  Let\'s see how well you know me.  I\'m going to ask you a few questions.  The first five will be Yes/No so please answer with a Y or N.  Thanks!');
+
+userName = prompt('Before we begin, please tell me your name.');
+console.log('User Name:', userName);
+
 questionOne();
 questionTwo();
 questionThree();
+
 alert('Alright ' + userName + ', you ready?  These next couple are a bit tougher!');
+
 questionFour();
 questionFive();
 questionSix();
